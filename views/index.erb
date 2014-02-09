@@ -1,0 +1,15 @@
+<head>
+</head>
+<body>
+  <h1>좋은 블로그다</h1>
+
+  <% @posts.each do |post| %>
+
+    <a href="/posts/<%= post.id %>">
+      <h3><%= post.title %></h3>
+      <p><%= post.description %></p>
+    </a>
+  <% end %>
+
+  <a href="/posts/new">새 포스팅하기</a>
+</body>

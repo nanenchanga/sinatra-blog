@@ -1,0 +1,16 @@
+<form id="post-form" action="/posts/<%= @post.id %>/update" method="post">
+  <div>
+    <label for="post-title">Title</label>
+    <input name="post-title" type="text" value="<%= @post.title%>" />
+  </div>
+
+  <div>
+    <label for="post-description">Description</label>
+
+    <textarea name="post-description">
+      <%= @post.description %>
+    </textarea>
+  </div>
+
+  <input type="submit" />
+</form>
